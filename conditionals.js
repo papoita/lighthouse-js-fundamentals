@@ -13,7 +13,7 @@ if (cold) {
 
 console.log("Now you're ready to go outside!");
 //excercise 2
-const temperature = 0;
+const temperature = -10;
 
 if (temperature < 0) {
 	console.log("Make sure you pick out a scarf!");
@@ -24,3 +24,11 @@ if (temperature < 0) {
 }
 
 console.log("Now you're ready to go outside!");
+
+//example3 logical operators
+const isCitizen = true;
+const age = 26;
+
+if (isCitizen && age > 18) {
+	console.log("You are eligible to vote.");
+}
