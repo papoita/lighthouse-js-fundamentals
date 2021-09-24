@@ -87,3 +87,15 @@ function buildTriangle(length) {
 // Note that the function buildTriangle() must return a string
 // because the console.log() accepts a string argument
 console.log(buildTriangle(10));
+
+
+//function expression
+//use a variable to define a function they become nameless
+
+var catSays = function (max) {
+  var catMessage = "";
+  for (var i = 0; i < max; i++) {
+    catMessage += "meow ";
+  }
+  return catMessage;
+};
