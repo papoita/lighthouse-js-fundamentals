@@ -90,7 +90,7 @@ console.log(buildTriangle(10));
 
 
 //function expression
-//use a variable to define a function they become nameless
+//use a variable to define a function they become nameless and they are not hoisted
 
 var catSays = function (max) {
   var catMessage = "";
@@ -99,3 +99,21 @@ var catSays = function (max) {
   }
   return catMessage;
 };
+
+//callback: function that is passed into another function
+// function expression catSays
+var catSays = function (max) {
+  var catMessage = "";
+  for (var i = 0; i < max; i++) {
+    catMessage += "meow ";
+  }
+  return catMessage;
+};
+
+// function declaration helloCat accepting a callback
+function helloCat(callbackFunc) {
+  return "Hello " + callbackFunc(3);
+}
+
+// pass in catSays as a callback function
+helloCat(catSays);
