@@ -117,3 +117,95 @@ function helloCat(callbackFunc) {
 
 // pass in catSays as a callback function
 helloCat(catSays);
+
+
+// inline funciton expressions
+// Function expression that assigns the function displayFavorite
+// to the variable favoriteMovie
+var favoriteMovie = function displayFavorite(movieName) {
+  console.log("My favorite movie is " + movieName);
+};
+
+// Function declaration that has two parameters: a function for displaying
+// a message, along with a name of a movie
+function movies(messageFunction, name) {
+  messageFunction(name);
+}
+
+// Call the movies function, pass in the favoriteMovie function and name of movie
+movies(favoriteMovie, "Finding Nemo");
+
+// Function declaration that takes in two arguments: a function for displaying
+// a message, along with a name of a movie
+function movies(messageFunction, name) {
+  messageFunction(name);
+}
+
+// Call the movies function, pass in the function and name of movie
+movies(function displayFavorite(movieName) {
+  console.log("My favorite movie is " + movieName);
+}, "Finding Nemo");
+
+// function declaration that takes in two arguments: a function for displaying
+// a message, along with a name of a movie
+function movies(messageFunction, name) {
+  messageFunction(name);
+}
+
+// call the movies function, pass in the function and name of movie
+movies(function displayFavorite(movieName) {
+  console.log("My favorite movie is " + movieName);
+}, "Finding Nemo");
+
+//example
+
+// Declare an empty string
+var sound = "";
+
+// An anonymous function expression stored in the variable `laugh`
+var laugh = function (num) {
+
+  //Iterate
+  for (var x = 0; x < num; x++) {
+    sound = sound + "ha";
+  }
+  sound = sound + "!";
+  return sound;
+}
+
+
+
+// It is essential that the function must return a string
+console.log(laugh(3));
+
+//another example
+var cry = function myFunction() {
+  var sound = "boohoo!";
+  return sound;
+};
+
+// Call the function using the variable name, not the function name
+console.log(cry());
+
+// This statement is also acceptable, but it won't print anything on your console
+// cry();
+
+//Call the emotions() function so that it prints the output you see below, but instead of passing the laugh() function as an argument, pass an inline function expression instead.
+
+// emotions() function definition
+function emotions(myString, myFunc) {
+  console.log("I am " + myString + ", " + myFunc(2));
+}
+
+// Call the emotions() function with two arguments
+// Argument 1 - "happy" string
+// Argument 2 - an inline function expression
+emotions("happy", function (num) {
+  var sound = ""; // Local variable
+  //Iterate
+  for (var i = 0; i < num; i++) {
+    sound = sound + "ha";
+  }
+  sound = sound + "!";
+  return sound;
+});
