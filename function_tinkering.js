@@ -48,3 +48,14 @@ function divideByTwo(num) {
 
 var sum = add(5, 7); // call the "add" function and store the returned value in the "sum" variable
 var average = divideByTwo(sum); // call the "divideByTwo" function and store the returned value in the "average" variable
+
+//global scope vs function scope
+
+//shadowing:re assigning new variable inside a function will in fact change the variable in the global scope. unless the variable is reasigned inside the function
+
+//Hoisting
+//function declaration is read first even though it is written at the bottom.
+//first functions
+//then variables
+//after functions can be called
+
