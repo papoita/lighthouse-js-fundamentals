@@ -28,19 +28,17 @@ const stations = [
 function chooseStations(stations) {
   let goodStations = [];
   for (let station of stations) {
-    const capacity = station[1]
-    const type = station[2];
-    //console.log(capacity);
-    if (capacity >= 20 && (type === "school" || type === "community centre")); {
-      //console.log(station[0]);
+    let capacity = stations[1];
+    let type = stations[2];
+    if (capacity >= 20 && type === "school" || type === "community centre") {
       goodStations.push(station[0]);
-
-
     }
-  }
-  return goodStations;
-  console.log(chooseStations(stations));
+  } return goodStations;
 }
+
+
+
+
 
 
 //console.log(chooseStations(stations));
