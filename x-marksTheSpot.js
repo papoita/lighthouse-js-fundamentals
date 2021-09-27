@@ -1,0 +1,88 @@
+
+//let moves = ["north", "west"]
+/*
+function finalPosition(moves) {
+  let paradePosition = [];
+  for (moves of moves);
+  if (moves === "north") {
+    paradePosition = paradePosition[0].push(1);
+
+  } if (moves === "east") {
+    paradePosition = paradePosition[1].push(1);
+  } else if (moves === "west") {
+    paradePosition = paradePosition[1].push(-1);
+  }
+  return finalPosition();
+}
+finalPosition(moves);
+*/
+/*
+const moves = ['north', 'north', 'west', 'west', 'north', 'east', 'north'];
+
+const finalPosition = function (moves) {
+  let paradePosition = [];
+  let x = 0;
+  let y = 0;
+  for (const move of moves) {
+    if (moves === 'north') {
+      y = y + 1;
+    } else if (moves === 'south') {
+      y = y - 1;
+    } else if (moves === 'west') {
+      x = x + 1;
+    } else if (moves === 'east') {
+      x = x - 1;
+    }
+  }
+  paradePosition.push(x, y);
+  return paradePosition;
+}
+
+console.log(finalPosition(moves));
+*/
+//
+let moves = ['north', 'north', 'west', 'west', 'north', 'east', 'north']
+
+
+function finalPosition(moves) {
+  let paradePosition = [0, 0];
+  for (let move of moves) {
+    if (move === "north") {
+      paradePosition[1] = paradePosition[1] + 1;
+    }
+    if (move === "south") {
+      paradePosition[1] = paradePosition[1] - 1;
+    }
+    if (move === "east") {
+      paradePosition[0] = paradePosition[0] + 1;
+    }
+    if (move === "west") {
+      paradePosition[0] = paradePosition[0] - 1;
+    }
+  }
+  return paradePosition;
+}
+console.log(finalPosition(moves));
+
+/*
+function finalPosition(moves){
+  let paradePosition = [0, 0];
+  for (let move of moves) {
+    if (paradePosition = "north") {
+      paradePosition[1] = paradePosition[1] + 1;
+    }
+    else if (paradePosition = "south") {
+      paradePosition[1] = paradePosition[1] - 1;
+    }
+    else if (paradePosition = "east") {
+      paradePosition[0] = paradePosition[0] + 1;
+    }
+    else if (paradePosition = "west") {
+      paradePosition[0] = paradePosition[0] - 1;
+    }
+  }
+  return paradePosition;
+}
+
+console.log(finalPosition(moves));
+*/
