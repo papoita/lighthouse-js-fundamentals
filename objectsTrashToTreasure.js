@@ -1,13 +1,18 @@
 function smartGarbage(trash, bins) {
-  if (type = "waste") {
-    return bins.waste + 1;
-  } if (type = "recycling") {
-    return bins.recycling + 1;
-  } if (type = "compost") {
-    return bins.compost + 1;
+  if (trash === "waste") {
+    bins.waste += 1;
+    return bins;
+  } else if (trash === "recycling") {
+    bins.recycling += 1;
+    return bins;
+  } else if (trash === "compost") {
+    bins.compost += 1;
+    return bins;
   }
 }
 smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 });
+
+/* other tests and attempts
 
 // let type = "";
 let x = 0;
@@ -18,3 +23,4 @@ let bins = {
   recycling: y,
   compost: z
 }
+*/
