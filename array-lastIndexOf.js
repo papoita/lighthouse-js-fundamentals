@@ -1,14 +1,54 @@
+
+//my answer
+
+function lastIndexOf(series, value) {
+  let lastOccur = "";
+  for (var i = 0; i < series.length; i++) {
+    if (series[i] === value) {
+      return i;
+
+    } else if (series[i] != value) {
+      return (-1);
+    }
+  }
+}
+
+
+
+//somebody answer
+function lastIndexOf(series, value) {
+  var foundMatch = false;
+  var result = 0;
+  for (var i = 0; i < series.length; i++) {
+    if (series[i] === value) {
+      result = i;
+      foundMatch = true;
+    }
+  }
+  if (foundMatch) {
+    return result;
+  } else {
+    return -1;
+  }
+}
+
+
+
 function lastIndexOf(array, value) {
   let lastOccur = "";
   for (let lastOccur of array) {
     if (array.lastIndexOf(value)) {
       return array.lastIndexOf(value);
+      return lastOccur;
     } if (array.lastIndexOf(value) = []) {
       return (-1);
     }
   }
 
 }
+
+
+
 
 
 
