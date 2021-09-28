@@ -1,21 +1,6 @@
 
-//my answer
 
-function lastIndexOf(series, value) {
-  let lastOccur = "";
-  for (var i = 0; i < series.length; i++) {
-    if (series[i] === value) {
-      return i;
-
-    } else if (series[i] != value) {
-      return (-1);
-    }
-  }
-}
-
-
-
-//somebody answer
+//somebody answer, the one that finnally worked
 function lastIndexOf(series, value) {
   var foundMatch = false;
   var result = 0;
@@ -29,6 +14,39 @@ function lastIndexOf(series, value) {
     return result;
   } else {
     return -1;
+  }
+}
+
+//one more try keeping the variables- cleaning the double negative code
+
+function lastIndexOf(array, value) {
+  let lastOccur = 0;
+  for (var i = 0; i <= series.length; i++) {
+    if (array[i] === value) {
+      let lastOccur = value;
+      foundMatch = true;
+    }
+  }
+  if (foundMatch = false) {
+    return result;
+
+  } else {
+    return -1;
+  }
+}
+
+/*
+//my answer
+
+function lastIndexOf(series, value) {
+  let lastOccur = "";
+  for (var i = 0; i < series.length; i++) {
+    if (series[i] === value) {
+      return i;
+
+    } else if (series[i] != value) {
+      return (-1);
+    }
   }
 }
 
@@ -48,7 +66,7 @@ function lastIndexOf(array, value) {
 }
 
 
-
+*/
 
 
 
