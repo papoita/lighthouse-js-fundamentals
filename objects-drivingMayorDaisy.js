@@ -1,5 +1,17 @@
+
 function carPassing(cars, speed) {
-  let currentTime = date.now();
+  let newCar = {
+    time: Date.now(),
+    speed: speed
+  };
+  cars.push(newCar);
+  return cars;
+
+}
+
+/*
+function carPassing(cars, speed) {
+  let currentTime = Date.now();
   let newArray = (speed, currentTime);
   cars.addElem({ newArray });
   function addElem(element) {
@@ -25,4 +37,4 @@ const cars = [
     speed: 35
   }
 ]
-
+*/
