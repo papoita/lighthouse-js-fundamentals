@@ -63,5 +63,31 @@ Once an element is selected, a property determines the styles that will be appli
  <em>Values</em>
 So far we’ve selected an element with a selector and determined what style we’d like to apply with a property. Now we can determine the behavior of that property with a value. Values can be identified as the text between the colon, :, and semicolon, ;. Here we are selecting all <p> elements and setting the value of the color property to be orange and the value of the font-size property to be 16 pixels
 </p>
+<h3>
+  type, class, and ID selectors.
+</h3>
+<p>
+  Type selectors target elements by their element type. For example, should we wish to target all division elements, div {}
+</p>
+<p>
+  Class selectors allow us to select an element based on the element’s class attribute value. Class selectors are a little more specific than type selectors, as they select a particular group of elements rather than all elements of one type. .awesome { ... }
+  div class="awesome">.../div
+</p>
+<p>
+  ID selectors are even more precise than class selectors, as they target only one unique element at a time. Just as class selectors use an element’s class attribute value as the selector, ID selectors use an element’s id attribute value as a selector.#shayhowe { ... }
+
+   div id="shayhowe">.../div
+
+</p>
+<p>
+  advanced selectors
+  https://learn.shayhowe.com/advanced-html-css/complex-selectors/
+</p>
+<p>
+  css resets
+  CSS resets take every common HTML element with a predefined style and provide one unified style for all browsers. These resets generally involve removing any sizing, margins, paddings, or additional styles and toning these values down. Because CSS cascades from top to bottom—more on that soon—our reset needs to be at the very top of our style sheet
+
+  https://meyerweb.com/eric/tools/css/reset/
+</p>
 </body>
 </html>
