@@ -1,0 +1,10 @@
+editing the DOM
+
+https://developer.chrome.com/docs/devtools/dom/
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+Once the HTML is modified through js and changes the tree of initial html then the modified content is called DOM.
+examples such as .removechild or .appendChild
+
+DOM document Object Model
