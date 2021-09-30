@@ -1,3 +1,13 @@
+
+// by allowing bracket notation metric can be anything .. make si tbetter code.
+const judgeVegetable = function (vegetables, metric) {
+  vegetables.sort(function (a, b) {
+    return b[metric] - a[metric];
+  });
+  return vegetables[0].submitter
+}
+
+
 // info to solve this
 //https://www.w3schools.com/jsref/jsref_sort.asp
 /*
@@ -6,6 +16,8 @@ points.sort(function (a, b) { return a - b });
 // highest value would be the first integer
 points[0];
 */
+
+//testing how to sort an object
 
 let test = [
   { name: "object 1", size: 20 },
@@ -19,12 +31,14 @@ test.sort(function (a, b) { return a.size - b.size });
 
 
 
+//test where  dot notation makes hard code not allowing any other metric
+
 function judgeVegetable(vegetables, metrics) {
-  if (metric === 'redness') {
+  if (metrics === 'redness') {
     vegetables.sort(function (a, b) { return b.redness - a.redness });
     return vegetables[0].submitter;
     console.log(vegetables[0].submitter);
-  } if (metric === 'plumpness') {
+  } if (metrics === 'plumpness') {
     vegetables.sort(function (a, b) { return b.plumpness - a.plumpness });
     return vegetables[0].submitter;
     console.log(vegetables[0].submitter);
