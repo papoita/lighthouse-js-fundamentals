@@ -8,13 +8,26 @@
   </head>
   <body>
     <p id="this-element-is-unique"></p>
+    <p id="info">JavaScript on The DOM</p>
   </body>
   <script>
+    //to alert
+    let elm = document.getElementById("info");
+    alert(elm.innerHTML);
+
     document.getElementById("this-element-is-unique");
 
     Examples;
     // document.getElementById("identifier");
     // document.getElementsByTagName("p");
     // document.getElementsByClassName("class-name");
+
+    //fiddle excercise
+    //https://jsfiddle.net/papoita/xdyjtmk2/
+
+    //
+    /*
+getElementById() can run about 15 million operations a second, compared to just 7 million per second for querySelector() in the latest version of Chrome.
+*/
   </script>
 </html>
