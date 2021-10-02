@@ -19,3 +19,5 @@ control z + undo actions
 
 node === 0
 referecne to it in the console to come back to it
+
+store node as a global variable with right click type the new name of the variable in the console.
