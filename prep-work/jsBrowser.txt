@@ -5,3 +5,9 @@ add/react to DOm events on the page
 ie. when an html element is clicked the DOm broadcast a click event, telling the webpage an element has been clicked.
 a click =trigger
 function that is run = the listener or handler
+
+Working with the DOM
+
+in DOM all HMTL elements are defined as objects
+property is the vaklue that you can get or set like changing the content of an HTML element
+Methis is an action you can do (add or delet and HTML element)
