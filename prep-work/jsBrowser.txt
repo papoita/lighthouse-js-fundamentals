@@ -1,0 +1,7 @@
+DOM allows js to:
+-add/remove change HTML element (tag) or property of an element (attribute)
+-change the css
+add/react to DOm events on the page
+ie. when an html element is clicked the DOm broadcast a click event, telling the webpage an element has been clicked.
+a click =trigger
+function that is run = the listener or handler
