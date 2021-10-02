@@ -19,6 +19,27 @@ const sayHello = function() {
   alert("Hello");
 }
 setTimeout(sayHello, 3000);
+
+
+//setInterval
+//t calls the function every time the specified amount of milliseconds pass
+// thsi owuld print the alert every 3 seconds!
+//assigning the return to a variable
+/*
+const sayHello = function() {
+  alert("Hello");
+}
+const timer = setInterval(sayHello, 3000);
+*/
+
+//instead you want to put a limit using another function
+const sayHello = function() {
+  alert("Hello");
+}
+const timer = setInterval(sayHello, 3000);
+
+clearInterval(timer);
+
   </script>
 
 
