@@ -14,3 +14,8 @@ control + F = opens search bar
 double click force state or pther actions on :active, :hoover, :focus, :visited
 
 H while inspecting = hide a node
+
+control z + undo actions
+
+node === 0
+referecne to it in the console to come back to it
