@@ -12,3 +12,5 @@ scroll into view to go back to a particular node
 
 control + F = opens search bar
 double click force state or pther actions on :active, :hoover, :focus, :visited
+
+H while inspecting = hide a node
