@@ -7,4 +7,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduct
 Once the HTML is modified through js and changes the tree of initial html then the modified content is called DOM.
 examples such as .removechild or .appendChild
 
-DOM document Object Model
+DOM document Object Document_Object_Model
+scroll into view to go back to a particular node
+
+control + F = opens search bar
+double click force state or pther actions on :active, :hoover, :focus, :visited
