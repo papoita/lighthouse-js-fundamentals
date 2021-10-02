@@ -1,0 +1,17 @@
+View and change CSS
+https://developer.chrome.com/docs/devtools/css/
+
+Inspecting elements
+attribute values
+padding
+
+placement of dev tools
+
+css declaration an elements
+
+.cls to add a new class
+and toggle it on or off
+
+add a pseduo state to a class such as hoover, active, focus, visited
+
+change padding an dmargin also possible
