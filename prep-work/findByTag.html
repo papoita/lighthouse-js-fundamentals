@@ -12,6 +12,16 @@
   <script>
     document.getElementsByTagName("p");
 
+    function myFunction() {
+      let elm = document.getElementsByTagName("P");
+      var i;
+      for (i = 0; i < elm.length; i++) {
+        console.log(elm[i].innerHTML);
+      }
+    }
+
+    myFunction();
+
     //https://jsfiddle.net/papoita/L259vpnf/
 
     /*
