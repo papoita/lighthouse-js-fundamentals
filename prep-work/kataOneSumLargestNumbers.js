@@ -20,3 +20,25 @@ console.log(sumLargestNumbers([10, 4, 34, 6, 92, 2]));
 
 //testing ideas: I owuld sort the array and the ask to sum the first to indexes
 //
+
+//Without using the sort method...it owuld have to be a double loop that uses splice in the second one to take away the biggest number.I Prefer sort method above.
+
+const sumLargestNumbers = function (data) {
+
+  let num1 = 0;
+  for (let i = 0; i < data.length; i++) {
+    if (data[i] > num1) {
+      num1 = data[i];
+    }
+  }
+  data.splice(data.indexOf(num1), 1);
+
+  let num2 = 0;
+  for (let j = 0; j < data.length; j++) {
+    if (data[j] > num2) {
+      num2 = data[j];
+    }
+  }
+
+  return num1 + num2;
+};
