@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>changing elements' content using .innerHTML</h1>
+    <p id="intro">Hello World!</p>
+
+    <p id="info">JavaScript on The DOM</p>
+    <script>
+      //https://jsfiddle.net/papoita/rt9L85vk/
+
+      // first we find the element
+      const elm = document.getElementById("paragraph-1");
+      // then we set it's innerHTML property
+      elm.innerHTML = "My new text";
+
+      /*
+	TODO:
+
+  	1. Create an empty variable, `elm`
+  	2. Find an element with the ID `info` and set the variable `elm` with its value
+    3. Change the contents of that elements to say `JavaScript Rocks!`
+*/
+    </script>
+  </body>
+</html>
