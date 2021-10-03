@@ -1,5 +1,7 @@
 //const sumLargestNumbers = function (data) {
 // Put your solution here
+
+//https://gist.github.com/papoita/f14cc337b245f8c6c77c5c79cafc6422
 let sumLargestNumbers = function (data) {
   let sortedNum = data.sort(function (a, b) { return b - a });
   return sortedNum[0] + sortedNum[1];
