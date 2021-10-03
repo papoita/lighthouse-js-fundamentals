@@ -22,12 +22,38 @@
       <li class="name">James</li>
       <li class="name">Sara</li>
     </ul>
+
+    An element can also have numerous classes separated by spaces.
+
+    <p id="paragragh-one" class="blue large"></p>
+    <p id="paragragh-two" class="blue large"></p>
+    <p id="paragragh-tree" class="blue small"></p>
+    <p id="paragragh-four" class="blue small"></p>
+    Those classes can be used to find elements with JavaScript using the
+    document.getElementsByClassName method.
+    document.getElementsByClassName('blue');
+    document.getElementsByClassName('blue large');
   </body>
   <script>
+    // https://jsfiddle.net/papoita/3qjyz1b4/10/
     // 1. Create an empty array, `names`
     // 2. Find all the paragraph elements using `getElementsByClassName`
     // 3. For each element found
     // Add the element's text to the array of names
     // 4. Alert the final result
+    function myFunction() {
+      let names = [];
+      let elm = document.getElementsByClassName("name");
+      let i;
+      for (i = 0; i < elm.length; i++) {
+        console.log(elm[i].innerHTML);
+        names.push(elm[i].innerHTML);
+      }
+      alert(names);
+      // this could alert in different alert boxes
+      //  alert(names[i].innerText);
+    }
+
+    myFunction();
   </script>
 </html>
