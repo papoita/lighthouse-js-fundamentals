@@ -34,6 +34,10 @@
         Click Me!
       </button>
     </p>
+
+    <p>
+      <button onclick="displayDate()">The time is?</button>
+    </p>
   </body>
   <script>
     //reaction to clicks
@@ -47,5 +51,10 @@
     const buttonClicked = function (selector) {
       alert("The " + selector + " button has been clicked.");
     };
+
+    //display date
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
   </script>
 </html>
