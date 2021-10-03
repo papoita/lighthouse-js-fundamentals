@@ -1,4 +1,4 @@
-//another try
+//correct code
 const conditionalSum = function (values, condition) {
 
   let array = 0;
@@ -7,7 +7,7 @@ const conditionalSum = function (values, condition) {
     if (condition === "even" && values[i] % 2 === 0) {
       array += values[i]
     } else if (condition === "odd" && values[i] % 2 !== 0) {
-      array = + values[i]
+      array += values[i]
     }
   }
   return array;
@@ -18,8 +18,8 @@ console.log(conditionalSum([1, 2, 3, 4, 5], "odd"));
 console.log(conditionalSum([13, 88, 12, 44, 99], "even"));
 console.log(conditionalSum([], "odd"));
 
-
-//test one condition
+/*
+//test one condition try
 
 function conditionalSum(values, condition) {
   // Your code here
@@ -78,3 +78,4 @@ console.log(conditionalSum([], "odd"));
 //0
 
 //loop through the array create  anew array with the numbers that match the condition using if and else if and else that returns 0.
+*/
