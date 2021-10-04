@@ -1,17 +1,23 @@
 //Create a function named instructorWithLongestName that will receive an array of instructor objects, and return the object that has the longest name.If there are two instructors with the longest name, return the first one.
 
+//First step to be able to read inside the object.
+
+function instructorWithLongestName(instructors) {
+  console.log(instructors[0].name);
+}
 
 function instructorWithLongestName(instructors) {
   // Put your solution here
-  let nameLength = [];
-  for instructors.name[i](let i = 0: i < instructors.name.length; i++) {
-    nameLength += instructors.name[i];
-  }
+  console.log(instructors[0].name);//
+  //let nameLength = [];
+  // for instructors.name[i](let i = 0: i < instructors.name.length; i++) {
+  // nameLength += instructors.name[i];
+}
 
-  //let sortedNum = data.sort(function (a, b) { return b - a });
-  //return sortedNum[0] + sortedNum[1];
+//let sortedNum = data.sort(function (a, b) { return b - a });
+//return sortedNum[0] + sortedNum[1];
 
-};
+//};
 
 console.log(instructorWithLongestName([
   { name: "Samuel", course: "iOS" },
