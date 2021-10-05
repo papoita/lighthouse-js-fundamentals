@@ -10,13 +10,41 @@
 //loop again new string for last character to check everycharacter in the string
 //if string.length -1 = %20 remove it
 
-const urlEncode = function (text) {
-  // Put your solution here
+//first step find white space
+function urlEncode(text) {
+  //let encodedText = "";
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] == " ") {
+      text[i] = "20%";
+      console.log("Am i doing this loop")
+    }
+    console.log(text[i]);
+  }
 }
-
 console.log(urlEncode("Lighthouse Labs"));
 console.log(urlEncode(" Lighthouse Labs "));
 console.log(urlEncode("blue is greener than purple for sure"));
+
+//Full try
+
+function urlEncode(text) {
+  //let encodedText = "";
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] = " ") {
+      text[i] = "20%";
+      encondedText.push(text[i])
+      console.log(text[i]);
+      console.log("white space replaced");
+    } else {
+      encondedText.push(text[i]);
+      console.log(text[i]);
+      console.log("pushing the same character");
+    }
+  }
+  // Put your solution here
+}
+
+
 
 //Lighthouse % 20Labs
 //Lighthouse % 20Labs
