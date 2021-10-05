@@ -8,7 +8,7 @@ function instructorWithLongestName(instructors) {
 
   for (let i = 0; i < instructors.length; i++) {
     nameLength.push(instructors[i].name.length);
-  } console.log(nameLength[i]);
+  } console.log(nameLength);
 }
 
 //let sortedNum = data.sort(function (a, b) { return b - a });
