@@ -2,20 +2,33 @@
 
 //second step loop through names and count
 function instructorWithLongestName(instructors) {
-  let nameLength = "";
+  let nameLength = [];
   console.log(instructors[0].name);
   console.log(instructors[0].name.length);
 
-  for instructors[i].name(let i = 0; i < instructors[i].name.length; i++) {
-    nameLength[i] += instructors[i].name;
-  } console.log(nameLength[i].length);
+  for (let i = 0; i < instructors.length; i++) {
+    nameLength.push(instructors[i].name.length);
+  } console.log(nameLength[i]);
 }
 
 //let sortedNum = data.sort(function (a, b) { return b - a });
 //return sortedNum[0] + sortedNum[1];
 
 //};
+/*
+for (let i = 0; i < instructors.length; i++) {
+  let nameLength = instructors[i].name;
+  console.log("Loop Number: ", i);
+  console.log("longestName: ", longestName);
+  console.log("longestName.length: ", longestName.length);
+  console.log("nameLength.length: ", nameLength.length);
 
+  if (longestName.length < nameLength.length) {
+    longestName = instructors[i];
+  }
+}
+
+*/
 
 
 //First step to be able to read inside the object and count the characters
