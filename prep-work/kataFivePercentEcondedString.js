@@ -10,6 +10,30 @@
 //loop again new string for last character to check everycharacter in the string
 //if string.length -1 = %20 remove it
 
+
+//replace and add to new string
+function urlEncode(text) {
+  let encodedText = [];
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] == " ") {
+      encodedText.push("20%");
+      console.log("Am i doing this loop");
+
+    } else {
+      encodedText.push(text[i]);
+      console.log("Am i doing this second loop");
+    }
+    console.log(text[i]);
+    console.log(encodedText);
+  }
+}
+
+console.log(urlEncode("Lighthouse Labs"));
+console.log(urlEncode(" Lighthouse Labs "));
+console.log(urlEncode("blue is greener than purple for sure"));
+
+
+
 //first step find white space
 function urlEncode(text) {
   //let encodedText = "";
@@ -21,9 +45,6 @@ function urlEncode(text) {
     console.log(text[i]);
   }
 }
-console.log(urlEncode("Lighthouse Labs"));
-console.log(urlEncode(" Lighthouse Labs "));
-console.log(urlEncode("blue is greener than purple for sure"));
 
 //Full try
 
