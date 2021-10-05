@@ -1,5 +1,39 @@
 //Create a function named instructorWithLongestName that will receive an array of instructor objects, and return the object that has the longest name.If there are two instructors with the longest name, return the first one.
 
+//Seems there is a sort length property that cna reduce code compelxity
+function instructorWithLongestName(instructors) {
+  let instructorName = [];
+  let longestName = [];
+  console.log(instructors[0].name);
+  console.log(instructors[0].name.length);
+
+  for (let i = 0; i < instructors.length; i++) {
+    instructorName.push(instructors[i].name);
+    longestName = instructorName.sort(
+      function (a, b) {
+        return b.length - a.length;
+      });
+
+  } console.log(longestName);
+
+
+
+}
+
+
+
+console.log(instructorWithLongestName([
+  { name: "Samuel", course: "iOS" },
+  { name: "Jeremiah", course: "Web" },
+  { name: "Ophilia", course: "Web" },
+  { name: "Donald", course: "Web" }
+]));
+console.log(instructorWithLongestName([
+  { name: "Matthew", course: "Web" },
+  { name: "David", course: "iOS" },
+  { name: "Domascus", course: "Web" }
+]));
+
 //second step loop through names and count
 function instructorWithLongestName(instructors) {
   let nameLength = [];
@@ -8,8 +42,13 @@ function instructorWithLongestName(instructors) {
 
   for (let i = 0; i < instructors.length; i++) {
     nameLength.push(instructors[i].name.length);
+
+
   } console.log(nameLength);
 }
+
+
+
 
 //let sortedNum = data.sort(function (a, b) { return b - a });
 //return sortedNum[0] + sortedNum[1];
@@ -40,17 +79,7 @@ function instructorWithLongestName(instructors) {
 
 
 
-console.log(instructorWithLongestName([
-  { name: "Samuel", course: "iOS" },
-  { name: "Jeremiah", course: "Web" },
-  { name: "Ophilia", course: "Web" },
-  { name: "Donald", course: "Web" }
-]));
-console.log(instructorWithLongestName([
-  { name: "Matthew", course: "Web" },
-  { name: "David", course: "iOS" },
-  { name: "Domascus", course: "Web" }
-]));
+
 
 //{ name: "Jeremiah", course: "Web" }
 
