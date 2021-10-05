@@ -3,6 +3,37 @@
 //Seems there is a sort length property that cna reduce code compelxity
 function instructorWithLongestName(instructors) {
   let instructorName = [];
+  let longestName = instructors[0];
+  console.log(instructors[0].name);
+  console.log(instructors[0].name.length);
+
+  for (let i = 0; i < instructors.length; i++) {
+    if (longestName > instructors[i].name.length) {
+      console.log(longestName);
+    }
+
+  }
+
+
+
+}
+
+console.log(instructorWithLongestName([
+  { name: "Samuel", course: "iOS" },
+  { name: "Jeremiah", course: "Web" },
+  { name: "Ophilia", course: "Web" },
+  { name: "Donald", course: "Web" }
+]));
+console.log(instructorWithLongestName([
+  { name: "Matthew", course: "Web" },
+  { name: "David", course: "iOS" },
+  { name: "Domascus", course: "Web" }
+]));
+
+
+//this code creates a new array, then sorts this new array by longest name
+function instructorWithLongestName(instructors) {
+  let instructorName = [];
   let longestName = [];
   console.log(instructors[0].name);
   console.log(instructors[0].name.length);
@@ -22,17 +53,7 @@ function instructorWithLongestName(instructors) {
 
 
 
-console.log(instructorWithLongestName([
-  { name: "Samuel", course: "iOS" },
-  { name: "Jeremiah", course: "Web" },
-  { name: "Ophilia", course: "Web" },
-  { name: "Donald", course: "Web" }
-]));
-console.log(instructorWithLongestName([
-  { name: "Matthew", course: "Web" },
-  { name: "David", course: "iOS" },
-  { name: "Domascus", course: "Web" }
-]));
+
 
 //second step loop through names and count
 function instructorWithLongestName(instructors) {
