@@ -1,6 +1,42 @@
 //Create a function named instructorWithLongestName that will receive an array of instructor objects, and return the object that has the longest name.If there are two instructors with the longest name, return the first one.
 
+//now trying to print the complete object only the first result
+function instructorWithLongestName(instructors) {
+  let instructorName = [];
+  let longestName = instructors[0];
+  console.log(instructors[0].name);
+  console.log(instructors[0].name.length);
+
+  for (let i = 0; i < instructors.length; i++) {
+    if (instructors[0].name.length < instructors[i].name.length) {
+
+      longestName = instructors[i].name;
+      console.log(longestName);
+      console.log('we got here');
+      return instructors[i];
+      console.log(instructors[i]);
+    }
+
+  }
+
+}
+console.log(instructorWithLongestName([
+  { name: "Samuel", course: "iOS" },
+  { name: "Jeremiah", course: "Web" },
+  { name: "Ophilia", course: "Web" },
+  { name: "Donald", course: "Web" }
+]));
+console.log(instructorWithLongestName([
+  { name: "Matthew", course: "Web" },
+  { name: "David", course: "iOS" },
+  { name: "Domascus", course: "Web" }
+]));
+
+
+
+
 //Seems there is a sort length property that cna reduce code compelxity
+//by replacing the array with the lingest name you can print it
 function instructorWithLongestName(instructors) {
   let instructorName = [];
   let longestName = instructors[0];
@@ -21,17 +57,7 @@ function instructorWithLongestName(instructors) {
 
 }
 
-console.log(instructorWithLongestName([
-  { name: "Samuel", course: "iOS" },
-  { name: "Jeremiah", course: "Web" },
-  { name: "Ophilia", course: "Web" },
-  { name: "Donald", course: "Web" }
-]));
-console.log(instructorWithLongestName([
-  { name: "Matthew", course: "Web" },
-  { name: "David", course: "iOS" },
-  { name: "Domascus", course: "Web" }
-]));
+
 
 
 //this code creates a new array, then sorts this new array by longest name
