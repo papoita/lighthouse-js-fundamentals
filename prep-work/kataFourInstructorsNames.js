@@ -1,5 +1,7 @@
 //Create a function named instructorWithLongestName that will receive an array of instructor objects, and return the object that has the longest name.If there are two instructors with the longest name, return the first one.
 
+//https://gist.github.com/papoita/e84173c0c79903f19750267586fc6d9d
+
 //now trying to print the complete object only the first result
 function instructorWithLongestName(instructors) {
   let instructorName = [];
