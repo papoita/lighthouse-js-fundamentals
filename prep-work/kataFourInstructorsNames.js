@@ -8,8 +8,11 @@ function instructorWithLongestName(instructors) {
   console.log(instructors[0].name.length);
 
   for (let i = 0; i < instructors.length; i++) {
-    if (longestName > instructors[i].name.length) {
+    if (instructors[0].name.length < instructors[i].name.length) {
+
+      longestName = instructors[i].name;
       console.log(longestName);
+      console.log('we got here');
     }
 
   }
