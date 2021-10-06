@@ -3,6 +3,9 @@
 //polluted
 //clean
 //fixing loop
+
+//
+//https://gist.github.com/papoita/bbf2f2923677b0e7be83016033708515
 const checkAir = function (samples, threshold) {
   let dirtySamples = 0;
   let contamination = 0;
